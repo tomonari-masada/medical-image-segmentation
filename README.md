@@ -1,4 +1,10 @@
-## training
+# Reference
+
+This implementation is based on [this document (in Japanese)](https://japan-medical-ai.github.io/medical-ai-course-materials/notebooks/Image_Segmentation.html).
+
+# How to use
+
+## Training
 
 ### without GPU
 ```
@@ -10,14 +16,14 @@ $ python main.py
 $ python main.py --cuda
 ```
 
-## prediction
+## Prediction
 
 ### without GPU
 ```
-$ python predict.py --model model_epoch_200.pth --input_image val/image/000.png --output_filename='temp.png'
+$ python predict.py --model model_epoch_1000.pth --input_image val/image/000.png --output_filename='temp.png'
 ```
 
 ### with GPU
 ```
-$ python predict.py --model model_epoch_200.pth --input_image val/image/000.png --output_filename='temp.png' --cuda
+$ python predict.py --model model_epoch_1000.pth --input_image val/image/000.png --output_filename='temp.png' --cuda
 ```
